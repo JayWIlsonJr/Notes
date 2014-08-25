@@ -1,0 +1,31 @@
+08/25/2014
+==========
+
+- Defined HTML and CSS.
+- Used the following HTML tags:
+  - `<doctype>`
+  - `<html>`
+  - `<head>`
+  - `<body>`
+  - `<p>`
+  - `<div>`
+  - `<a>`
+  - `<h1>`
+  - `<img>`
+  - `<ul>`
+  - `<ol>`
+  - `<script>`
+  - `<style>`
+- Used the following CSS rules:
+  - background
+  - color
+  - hex vs rgb vs rgba vs hsl
+  - opacity
+  - display
+  - margin
+  - padding
+  - height / width
+  - visibility
+  - font
+- Outlined the basics of the HTML/CSS box model.
+- Started playing with JSBin
