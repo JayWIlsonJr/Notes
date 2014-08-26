@@ -11,6 +11,7 @@
 - [`right`](https://developer.mozilla.org/en-US/docs/Web/CSS/right)
 - [`bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/bottom)
 - [`left`](https://developer.mozilla.org/en-US/docs/Web/CSS/left)
+- [`display`](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
 - [`float`](https://developer.mozilla.org/en-US/docs/Web/CSS/float)
 - [shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
 - [selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors)
