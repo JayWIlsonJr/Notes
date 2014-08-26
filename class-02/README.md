@@ -19,6 +19,36 @@
 - [stacking context](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Understanding_z_index/The_stacking_context)
 - [z-index diagram](http://www.smashingmagazine.com/wp-content/uploads/2009/09/graphical-z-index.gif)
 
+## Child Selector
+The 'child selector' (`>`) will select a direct descendant that matches, but only go one level deep.
+
+Given the following HTML:
+
+```html
+<div class="outer">
+  <div class="inner">
+    <div class="very-inner"></div>
+  </div>
+</div>
+```
+
+```css
+// targets inner, but not very-inner
+.outer > div {
+
+}
+```
+
+## Descendent Selector
+The 'descendent selector' (` ` i.e. a space) will select any descendent that matches, infinite levels deep.
+
+```css
+// targets both inner and very-inner
+.outer div {
+
+}
+```
+
 ## ProTip
 - Use `border: solid red 1px;` to see where the edges of a box are.
 - Use `*{ border: solid red 1px; }` if you need a sledgehammer.
