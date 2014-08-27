@@ -27,6 +27,20 @@ $ ls . # this lists the contents of the current directory
 $ cd .. # this moves up a directory
 ```
 
+If you ever get stuck in the command line editor, vim, just type:
+
+```
+:q!
+```
+
+It will show up in the bottom left corner, then hit Enter and vim will die.
+
+Then make sure you use:
+
+```sh
+git config --global core.editor "atom --wait"
+```
+
 # Git basics
 To use the basics of git, you can think of it as a photo booth. It takes a snapshot of your project at a certain point in time, but it will only snapshot the things you have placed in the "staging area" (the booth, in this analogy).
 
@@ -54,6 +68,11 @@ If you've deleted files, you'll need use the `-u` flag:
 
 ```sh
 $ git add -u .
+```
+
+## Checking the status
+```sh
+$ git status
 ```
 
 ## Committing files
@@ -162,3 +181,8 @@ http://ustwo.com/ppp/
 
 ## Placeholder images
 http://placekitten.com
+
+# How to clear
+- using a div: http://jsbin.com/nezufu/1/edit
+- using a pseudoelement: http://jsbin.com/nezufu/6/edit
+- `overflow: auto` clearfix hack (the one I use): http://jsbin.com/nezufu/8/edit
