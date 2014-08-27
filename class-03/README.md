@@ -1,3 +1,13 @@
+# Homework Review
+- https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top
+- https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries
+
+# CSSLint
+
+```sh
+$ npm -g install csslint
+```
+
 # Terminal basics
 
 ```sh
@@ -90,6 +100,15 @@ $ git commit
 $ git push
 ```
 
+# HTML
+- table
+- form
+- input
+- textarea
+- label
+- select / option
+- button
+
 # CSS
 ## Vocabulary
 ```css
@@ -116,6 +135,8 @@ a:active {
 - overflow
 - vertical-align
 - ::before
+- border-radius
+- linear-gradient
 - general/adjacent sibling
 
 ## Specificity
@@ -128,8 +149,13 @@ http://css-tricks.com/the-css-overflow-property/
 ## Sip
 http://theolabrothers.com/sip/
 
-## How to screenshot
+## How to screenshot to Desktop
 Command + Shift + 4
+
+## Screenshot to Clipboard
+Control + Command + Shift + 4
+
+Also see http://support.apple.com/kb/PH11229
 
 ## Pixel Perfect Precision
 http://ustwo.com/ppp/
