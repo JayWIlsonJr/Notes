@@ -91,6 +91,26 @@ $ git push
 ```
 
 # CSS
+## Vocabulary
+```css
+div > a // selector
+{
+  border-color: red;
+  // property: value;
+  // Also, the whole line is a "rule"
+}
+
+::before { } // pseudoelement
+:hover { } // pseudoclass
+
+// Muliple selectors for a group of rules
+
+a:hover,
+a:active {
+   color: chartreuse;
+}
+```
+
 ## Properties
 - clear
 - overflow
