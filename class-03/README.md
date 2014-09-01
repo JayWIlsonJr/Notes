@@ -27,20 +27,6 @@ $ ls . # this lists the contents of the current directory
 $ cd .. # this moves up a directory
 ```
 
-If you ever get stuck in the command line editor, vim, just type:
-
-```
-:q!
-```
-
-It will show up in the bottom left corner, then hit Enter and vim will die.
-
-Then make sure you use:
-
-```sh
-git config --global core.editor "atom --wait"
-```
-
 # Git basics
 To use the basics of git, you can think of it as a photo booth. It takes a snapshot of your project at a certain point in time, but it will only snapshot the things you have placed in the "staging area" (the booth, in this analogy).
 
@@ -80,6 +66,16 @@ Now that you have files in the staging area, you can save a snapshot of the stag
 
 ```sh
 $ git commit
+```
+
+This will open a text editor, probably Atom. (See [Configuring git editor](#Configuring git editor) if Atom doesn't open.)
+
+Enter a commit message as the first line in the editor (e.g. "Initial commit" or "Fix the font in index.html"). Save the document in the editor and close the window. git will finish running in the terminal and you should see output like the following:
+
+```
+$ git commit
+[master 7b84c79] Fix font in index.html
+1 file changed, 12 insertions(+), 2 deletions(-)
 ```
 
 ## Pushing to GitHub
@@ -186,3 +182,22 @@ http://placekitten.com
 - using a div: http://jsbin.com/nezufu/1/edit
 - using a pseudoelement: http://jsbin.com/nezufu/6/edit
 - `overflow: auto` clearfix hack (the one I use): http://jsbin.com/nezufu/8/edit
+
+# Configuring git editor
+If you ever get stuck in the command line editor that looks something like:
+
+![](http://d.pr/i/NODo.png)
+
+Type the following to quit:
+
+```
+:q!
+```
+
+It will show up in the bottom left corner, then hit Enter and vim will die.
+
+Then make sure you use:
+
+```sh
+git config --global core.editor "atom --wait"
+```
