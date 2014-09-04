@@ -114,14 +114,46 @@ document.getElementById(id).onclick = function(){
 ## forEach
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
 
+```js
+[1, 2, 3].forEach(function(num) {
+  console.log(num);
+});
+
+// => 1
+// => 2
+// => 3
+```
+
 ## map
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+
+```js
+[1, 2, 3].map(function(num) {
+  return num * 2;
+});
+
+// => [2, 4, 6]
+```
 
 ## reduce
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
 
+```js
+[1, 2, 3].reduce(function(total, current) {
+  return total + current;
+});
+// => 6
+```
+
 ## filter
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+
+```js
+[1, 2, 3].filter(function(num) {
+  return num >= 3;
+});
+// => [3]
+```
 
 # Referential transparency
 
