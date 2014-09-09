@@ -1,3 +1,5 @@
+# 09/08/14
+
 Parameters are formal
 - They are part of the function declaration
 
@@ -59,5 +61,5 @@ In jQuery event handlers, the value of `this` is the element that the event was 
 - http://jsbin.com/lozutu/2/edit
 - http://jsbin.com/tupiqe/1/edit
 
-# Cool Video
+# Cool Videos
 - http://delve.tv/essays/
