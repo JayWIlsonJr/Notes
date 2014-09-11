@@ -20,3 +20,8 @@ $.get(url).done(function(data){
 # JSBin
 - http://jsbin.com/nimedu/1/edit
 - [Crappy template function](http://jsbin.com/yiluye/1/edit)
+
+# Iteration
+
+![](./map-filter-forEach.png)
+![](./reduce.png)
