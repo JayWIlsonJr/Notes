@@ -9,10 +9,10 @@ Browsers put limits on the ability to make cross domain requests.
 ## Cross Origin Resource Sharing
 CORS -> Access-Control-Allow-Origin
 
-# Easy Mode
+# Getting JSON from a URL
 
 ```javascript
-$.get(url).done(function(data){
+$.getJSON(url).done(function(data){
   // Use data here
 });
 ```
