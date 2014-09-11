@@ -25,3 +25,28 @@ $.getJSON(url).done(function(data){
 
 ![](./map-filter-forEach.jpg)
 ![](./reduce.jpg)
+
+# GitHub API Access
+
+1. Create a Personal access token (https://github.com/settings/applications)
+2. Give it a description like "GitHub Homework"
+3. Select the `public_repo` and `user` scopes.
+4. Click Generate token and copy the token
+5. Create a file called `token.js` with contents:
+
+    ```js
+    var token = <Your actual token goes here>;
+
+    $.ajaxSetup({
+      headers: {
+        "Authorization": "token " + token
+      }
+    });
+    ```
+
+6. Create a `.gitignore` file to ignore the token file:
+    ```
+    token.js
+    ```
+
+7. Include token.js in a script tag before your script.
