@@ -23,5 +23,5 @@ $.get(url).done(function(data){
 
 # Iteration
 
-![](./map-filter-forEach.png)
-![](./reduce.png)
+![](./map-filter-forEach.jpg)
+![](./reduce.jpg)
