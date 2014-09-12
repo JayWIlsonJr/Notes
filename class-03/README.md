@@ -25,12 +25,16 @@ $ ls . # this lists the contents of the current directory
 
 # the symbol for the parent directory is ..
 $ cd .. # this moves up a directory
+
+# See the current directory
+$ pwd
 ```
 
 # Git basics
 To use the basics of git, you can think of it as a photo booth. It takes a snapshot of your project at a certain point in time, but it will only snapshot the things you have placed in the "staging area" (the booth, in this analogy).
 
 ## Creating a repository on your computer
+This creates a git repository in the current directory.
 
 ```sh
 git init .
@@ -38,13 +42,13 @@ git init .
 
 ## Adding files to the staging area
 
-To add a single file named somefile.html:
+To see the current status of your directory and repository:
 
 ```sh
-$ git add somefile.html
+$ git status
 ```
 
-Most of the time though, you want to track *all* files. You can do this by adding the current directory.
+To track *all* files. You can do this by adding the current directory.
 
 ```sh
 $ git add .
@@ -108,7 +112,6 @@ If you use the wrong command, it might give you an error, but it won't hurt anyt
 ## Summary
 
 ```sh
-$ git init .
 # add some files
 $ git add .
 $ git commit
