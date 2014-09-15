@@ -68,7 +68,7 @@ $ gulp watch
 - .ajax
 - jqXHR object
 
-http://jsbin.com/relev/1/
+http://jsbin.com/relev/1/edit?html,js,output
 
 # Asynchrony
 Beware of asynchrony. Asynchronous functions should/will always execuet after the current execution context is finished.
