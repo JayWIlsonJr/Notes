@@ -32,7 +32,7 @@ jqXHR.done(someFunction)
 - Disclaimer: It's easy to let yeoman be an obstacle to understanding the underlying tools.
 - Uses NPM packages to generate scaffold
 
-```js
+```sh
 $ npm install -g yo
 $ npm install -g generator-tiy-webapp
 
