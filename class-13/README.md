@@ -22,7 +22,7 @@ Each story should be split up into task cards. They answer the question "how sho
 - For each post returned, create a DOM element and insert it into the DOM.
 
 ## Principles
-### Do the simplest thing that could possible work.
+### Do the simplest thing that could possibly work.
 Don't overthink things. If it works, don't make it more complicated.
 
 ### Don't repeat yourself
