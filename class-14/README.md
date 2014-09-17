@@ -8,5 +8,5 @@ Not an array, just acts like one
 ### pretty log
 
 ```sh
-$ git config --global format.pretty "pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset"
+$ git config --global format.pretty "%C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset"
 ```
