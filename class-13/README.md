@@ -55,3 +55,16 @@ The navigator is the other person, they focus on the big picture (how the differ
 3. Create a topic branch
 4. Commit and push your changes to the topic branch on your fork.
 5. Create a pull request.
+
+# setTimeout and setInterval
+Ways to do tasks/functions/things asynchronously at a set time or set interval.
+##setTimeout(function, ms)
+- This means that 'x' milliseconds from now, place the contained function in the execution queque.  The amount of time set will not be exact.  
+- This can be used to pervent the user interface (UI) from being blocked while a browser is processing.  ex: setTimeout (function, 0)
+
+##setInterval(function, ms)
+- This means that this function will be repeated every 'x' milliseconds.  
+- Use clearInterval to stop the call.
+
+##Online Resource:
+http://javascript.info/tutorial/settimeout-setinterval
