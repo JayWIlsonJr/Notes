@@ -57,10 +57,10 @@ The navigator is the other person, they focus on the big picture (how the differ
 5. Create a pull request.
 
 # setTimeout and setInterval
-Ways to do tasks/functions/things asynchronously at a set time or set interval.
+Ways to do tasks/functions/things asynchronously at a set delay or set interval.
 ##setTimeout(function, ms)
 - This means that 'x' milliseconds from now, place the contained function in the execution queque.  The amount of time set will not be exact.  
-- This can be used to pervent the user interface (UI) from being blocked while a browser is processing.  ex: setTimeout (function, 0)
+- This can be used to prevent the user interface (UI) from being blocked while a browser is processing.  ex: setTimeout (function, 0)
 
 ##setInterval(function, ms)
 - This means that this function will be repeated every 'x' milliseconds.  
@@ -68,3 +68,17 @@ Ways to do tasks/functions/things asynchronously at a set time or set interval.
 
 ##Online Resource:
 http://javascript.info/tutorial/settimeout-setinterval
+
+# Preventing default actions
+By default, browser events have default behavior. For example, 'click a' changes the location of the page and 'form submit' submits the form data and refreshes the page.
+
+To prevent default behavior of an event, call the `preventDefault` function on the event.
+
+To prevent default behavior of a form submit, for example:
+
+```js
+$(document).on('submit', 'form', function(event){
+  event.preventDefault();
+  // Your code goes here
+});
+```
