@@ -25,3 +25,26 @@ $ git config --global core.pager "less -FRSX"
 - https://guides.github.com/activities/forking/
 - https://help.github.com/articles/github-glossary
 - https://help.github.com/articles/what-are-other-good-resources-for-learning-git-and-github
+
+### Setting a repository as upstream remote
+This is useful when `origin` points to a fork, you can create a remote for the original repostitory.
+
+Change <repository-url> to the actual URL.
+
+```sh
+$ git remote add upstream <repository-url>
+```
+
+Then to sync your fork with the original:
+
+```sh
+$ git pull upstream master
+$ git push origin master
+```
+
+### Modifying a remote URL
+This is useful if you accidentally copied the https URL.
+
+```sh
+$ git remote set-url upstream <repository-url>
+```
