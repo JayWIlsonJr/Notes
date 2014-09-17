@@ -9,6 +9,7 @@ Not an array, just acts like one
 
 ```sh
 $ git config --global format.pretty "%C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset"
+$ git config --global core.pager "less -FRSX"
 ```
 
 ### Summary of today's topics
