@@ -8,11 +8,13 @@
 - http://neat.bourbon.io/
 - http://bitters.bourbon.io/
 - http://hammerjs.github.io/
+
     ```js
     $(document).hammer({}).bind('swipe', function(){
       console.log("Swipe");
     })
     ```
+
 - https://smacss.com
 
 ### Getting Bitters to work with tiy-webapp
