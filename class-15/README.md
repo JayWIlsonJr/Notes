@@ -6,3 +6,11 @@
 - http://bourbon.io/
 - http://neat.bourbon.io/
 - http://bitters.bourbon.io/
+
+# Git hooks
+
+```sh
+# create a file .git/hooks/post-checkout
+[ -f package.json ] && npm install
+[ -f bower.json ] && bower update
+```
