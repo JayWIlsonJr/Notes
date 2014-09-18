@@ -38,6 +38,7 @@ $ git remote add upstream <repository-url>
 Then to sync your fork with the original:
 
 ```sh
+# In your master branch
 $ git pull upstream master
 $ git push origin master
 ```
