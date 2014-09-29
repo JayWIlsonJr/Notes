@@ -29,6 +29,9 @@ $ git commit
 $ git push origin master
 $ gulp deploy
 ```
+
+**Note:** Must have committed all your changes to master
+
 ## Web Server
 Everything we've done so far is front end engineering of static assets. If you want to do [backend programming](http://skillcrush.com/2012/10/26/backend-programming-from-ruby-to-node-js/), you will need to deploy to a platform that supports databases, backend runtime environments, web servers, etc.
 

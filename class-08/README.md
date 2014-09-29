@@ -21,7 +21,7 @@ There needs to be a symmetry between arguments and parameters to have the code d
 
 # Scope
 ## Context
-Context means the context in which code is executing
+Context means the context in which code is executing (scope, strict mode, value of `this`)
 - Global context
 - Function context is created every time a function is executed.
 - `eval` creates a new context
@@ -42,13 +42,32 @@ Only the declaration for function expressions is hoisted.
 A JavaScript keyword that evaluates to different values in different execution contexts.
 
 - Global and global functions
-- Inside methods
+- Inside methods (even if the function was added to the object later)
 - jQuery
 
+# Why jQuery
+- Selecting elements
+- DOM manipulation
+- Event handling
+- Ajax
+- Cross browser development
+
 # jQuery
-- select elements (use the `$() function`)
+- select elements (use the `$() function`, returns the jQuery object)
 - read methods (e.g. $('div').text())
 - write methods (e.g. $('body').append(someElement))
+- `$(this)` is a common pattern in event handlers
+- It's useful to cache queries:
+
+    ```js
+    var $items = $('.my-list li');
+    $items.addClass('highlighted');
+    setTimeout(function(){
+      $items.removeClass('highlighted');
+    }, 1000);
+    ```
+
+- `$(document).ready(function(){})` and `$(function(){})`
 
 ## Events
 In jQuery event handlers, the value of `this` is the element that the event was triggered on.
