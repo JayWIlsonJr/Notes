@@ -1,7 +1,8 @@
 # 09/17/14
 
 ## Responsive
-[Responsive Development Checklist](http://samkap.github.io/projects/tiy-rwd/)
+- [Responsive Development Checklist](http://samkap.github.io/projects/tiy-rwd/)
+- [media queries](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries)
 
 ## Resources
 - http://bourbon.io/

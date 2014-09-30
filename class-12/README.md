@@ -71,7 +71,7 @@ $ gulp watch
 http://jsbin.com/wakifa/1/edit?js,output
 
 # Asynchrony
-Beware of asynchrony. Asynchronous functions should/will always execuet after the current execution context is finished.
+Beware of asynchrony. Asynchronous functions should/will always execute after the current execution context is finished.
 
 # Promises
 Promises are a way to gain control over asynchrony. The callbacks will be executed in the order you add them.
