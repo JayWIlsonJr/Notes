@@ -6,9 +6,9 @@ OH HAI! Mason Stewart here. This a "just ok" guide to Backbone.js. It assumes th
 
 First let's talk about Backbone's four major parts. Most people over complicate Backbone, and most tutorials assume you're some MVC nerd. It's actually much simpler than most people make it. The major parts are:
 
-  * [Models](01-models-and-collections.html)
-  * [Collections](01-models-and-collections.html)
-  * [Views](02-views.html)
+  * [Models](01-models-and-collections.md)
+  * [Collections](01-models-and-collections.md)
+  * [Views](02-views.md)
   * Routers
 
 There are a few other parts, but these are the main ones. What's cool about Backbone is that, with a slight exception, all of these parts of Backbone are independent. They don't "require" each other to work and you're free to pick and choose when and if to use any of them.
