@@ -38,3 +38,6 @@ var Todo = Backbone.Model.extend({});
 NEVER type "**new** Backbone.Model.extend..."
 
 When you construct an instance, you pass properties in via an object that are saved onto the internal `attributes`. The exception to this is `id`, which has special meaning for a model.
+
+# Backbone architecture
+![](Architecture.png)
