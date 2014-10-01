@@ -1,0 +1,3 @@
+# Requirements
+- When I type a title in the text box and hit enter, it should add a book to my library list
+- If I click "Check Out", it should have a line through it.

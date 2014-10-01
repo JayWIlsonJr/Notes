@@ -1,39 +1,42 @@
+/* global App */
 (function(){
   'use strict';
 
   window.App = {};
   App.Views = {};
+  App.Models = {};
+
+  App.Models.Todo = Backbone.Model.extend({
+
+  });
 
   App.Views.ListView = Backbone.View.extend({
-    initialize: function(){
-      $('body').append(this.el);
-      this.filteredList = this.collection;
-    },
+    tagName: 'ul',
+    className: 'list-view',
 
     render: function(){
-      this.$el.empty();
-      var self = this;
-      _.each(this.filteredList, function(item){
-        self.$el.append('<li>'+item+'</li>');
-      });
-    },
-
-    filterBy: function(val){
-      this.filteredList = this.collection.filter(function(item){
-         return item.match(val);
-      });
-      this.render();
+      $('body').append(this.el);
     }
   });
+
+  App.Views.ItemView = Backbone.View.extend({
+    render: function(){
+      $('.list-view').append('<li>'+this.model.get('title')+'</li>');
+    }
+  })
+
 })();
 
 $(document).ready(function(){
-   var collection = ["Cool", "Rad", "Excellent"];
-   App.listView = new App.Views.ListView({collection: collection});
-   App.listView.render();
+  var listView = new App.Views.ListView();
+  listView.render();
 });
 
-$('input[type=search]').on('input', function(){
-  var val = $(this).val();
-  App.listView.filterBy(val);
+$(document).on('keyup', 'input', function(e){
+  if(e.which === 13){
+    var val = $(this).val();
+    var todo = new App.Models.Todo({title: val});
+    var itemView = new App.Views.ItemView({model: todo});
+    itemView.render();
+  }
 })
