@@ -1,18 +1,36 @@
+/* global Backbone, _, $ */
+'use strict';
+
 var Book = Backbone.Model.extend({});
 
 var BookCollection = Backbone.Collection.extend({
   model: Book
 });
 
+var BookView = Backbone.View.extend({
+  tagName: 'li',
+  template: _.template('<input type="checkbox"><%= title %>'),
+
+  render: function(){
+    this.$el.html(this.template(this.model.attributes));
+  }
+});
+
 var LibraryListView = Backbone.View.extend({
   tagName: 'ul',
   className: 'library-list',
-  initialize: function(){
+  initialize: function(options){
+    options = options || {};
+    this.$container = options.$container;
+
     // Append/prepend to parent container
-    $('.jumbotron').append(this.el);
+    this.$container.append(this.el);
 
     this.listenTo(this.collection, 'add', function(book){
-      this.$el.append('<li>' + book.get('title') + '</li>');
+      var bookView = new BookView({ model: book });
+      bookView.render();
+      // this is doing the same thing as $container.append inside the view
+      this.$el.append(bookView.el);
     });
   }
 });
@@ -58,7 +76,10 @@ $(document).ready(function(){
   var createBookView = new CreateBookView({collection: books});
   createBookView.render();
 
-  var libraryListView = new LibraryListView({collection: books});
+  var libraryListView = new LibraryListView({
+    $container: $('.jumbotron'),
+    collection: books
+  });
 
   var summaryView = new BookSummaryView({collection: books});
   summaryView.render();
