@@ -5,7 +5,12 @@
     "bootstrap-sass-official": "~3.1.1",
     "modernizr": "~2.6.2",
     "jquery": "~1.11.0",
-    "backbone": "~1.1.2"
+    "backbone": "~1.1.2",
+    "firebase": "~1.0.24",
+    "backfire": "~0.3.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "resolutions": {
+    "backbone": "<=1.1.0"
+  }
 }
