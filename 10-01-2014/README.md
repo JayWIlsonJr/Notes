@@ -37,6 +37,8 @@ var Todo = Backbone.Model.extend({});
 
 NEVER type "**new** Backbone.Model.extend..."
 
+If you think in terms of a table, the table would be the collection (i.e. to-dos), the headers in the table would be the model (i.e. title, status), and the content in the table rows would be the data (i.e. read Decision Point, done).
+
 When you construct an instance, you pass properties in via an object that are saved onto the internal `attributes`. The exception to this is `id`, which has special meaning for a model.
 
 # Backbone architecture
