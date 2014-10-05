@@ -31,4 +31,4 @@ See https://github.com/firebase/backfire for more info
 
 ## Backbone stuff
 
-We continued to work on the library app, see [yesterday's notes](../10-02-2014/).
+We continued to work on the library app, see [yesterday's notes](../10-01-2014/).
