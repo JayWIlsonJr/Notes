@@ -2,4 +2,4 @@
 
 # Backbone
 
-- See [Backbone: Choose Your Own Adventure](backbone-adventure.md)
+- See [Backbone: Choose Your Own Adventure](http://github.com/TIY-GVL-FEE-2014-Aug/backbone-adventure)
