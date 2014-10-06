@@ -57,3 +57,6 @@ Now the results look like:
   e: "5"
 }
 ```
+
+# Model#validate
+http://jsbin.com/zicinu/2/edit
