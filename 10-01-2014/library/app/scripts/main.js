@@ -7,12 +7,12 @@ var Book = Backbone.Model.extend({
     author: "",
     isCheckedOut: false
   },
-  firebase: new Backbone.Firebase("https://blistering-torch-3318.firebaseio.com/")
+  firebase: new Backbone.Firebase("https://blistering-torch-3318.firebaseio.com/books")
 });
 
 var BookCollection = Backbone.Firebase.Collection.extend({
   model: Book,
-  firebase: "https://blistering-torch-3318.firebaseio.com/"
+  firebase: "https://blistering-torch-3318.firebaseio.com/books" + Date.now()
 });
 
 var BookView = Backbone.View.extend({
