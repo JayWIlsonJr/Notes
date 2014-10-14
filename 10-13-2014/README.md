@@ -1,7 +1,7 @@
 # 10/13/2014
 
 ## Ember Review
-- Read the [Guides](emberjs.com/guides/)
+- Read the [Guides](http://emberjs.com/guides/)
 - http://jsbin.com/tohayi/1/edit
 - http://jsbin.com/xigili/3/edit
 - http://jsbin.com/rahiya/2/edit
