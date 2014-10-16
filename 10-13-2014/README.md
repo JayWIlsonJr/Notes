@@ -37,10 +37,10 @@
         '.tmp/styles/**/*.css',
         'app/scripts/**/*.js',
         'app/images/**/*',
-        'app/templates/*.hbs'  // <~~~~~~~~~~~~~~~~~~~~~~~~~~~  ADD THIS
+        'app/templates/**/*.hbs'  // <~~~~~~~~~~~~~~~~~~~~~~~~~~~  ADD THIS
       ]).on('change', $.livereload.changed);
 
-      gulp.watch('app/templates/*.hbs', ['templates']); // <~~~ AND THIS
+      gulp.watch('app/templates/**/*.hbs', ['templates']); // <~~~ AND THIS
       gulp.watch('app/styles/**/*.scss', ['styles']);
       gulp.watch('bower.json', ['wiredep']);
     });
